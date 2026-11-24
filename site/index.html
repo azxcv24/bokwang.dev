@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bokwang — Personal Homepage</title>
+  <meta name="description" content="Personal homepage of Bokwang: projects, experience, and contact.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!--
+    HOW TO EDIT / 수정 방법
+    - English text goes in normal tags.
+    - Korean text goes in <span class="ko"> ... </span> (shown smaller and gray).
+    - Lines marked TODO are placeholders. Replace them with your own info.
+      TODO 표시된 부분은 예시입니다. 본인 정보로 바꿔주세요.
+  -->
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#">Bokwang</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="lang-toggle" id="langToggle" type="button" aria-pressed="true" title="Show / hide Korean">한/EN</button>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <!-- ===== Profile sidebar / 프로필 ===== -->
+    <aside class="profile">
+      <img class="photo" src="assets/profile.svg" alt="Profile photo">
+      <h1>Bokwang <span class="ko-inline">보광</span></h1>
+      <p class="role">Software Engineer <!-- TODO --></p>
+      <p class="affil">Your Company / University <!-- TODO --><br><span class="ko">소속 회사 / 학교</span></p>
+      <ul class="links">
+        <li><a href="https://github.com/azxcv24">GitHub</a></li>
+        <li><a href="#contact">Email</a></li>
+        <li><a href="#">CV (PDF)</a> <!-- TODO: assets/cv.pdf --></li>
+        <li><a href="#">LinkedIn</a> <!-- TODO --></li>
+      </ul>
+    </aside>
+
+    <div class="content">
+      <!-- ===== About / 소개 ===== -->
+      <section id="about">
+        <h2>About <span class="ko-inline">소개</span></h2>
+        <p>
+          Hello! I am Bokwang, a software engineer interested in
+          backend systems, cloud infrastructure, and DevOps. <!-- TODO -->
+          I enjoy building reliable services and automating the path from code to production.
+        </p>
+        <p class="ko">
+          안녕하세요! 백엔드 시스템, 클라우드 인프라, DevOps에 관심이 많은 개발자 보광입니다.
+          안정적인 서비스를 만들고, 코드가 운영 환경까지 가는 과정을 자동화하는 것을 좋아합니다.
+        </p>
+
+        <h3>Interests <span class="ko-inline">관심 분야</span></h3>
+        <ul class="tags">
+          <li>Backend Development</li>
+          <li>Cloud &amp; Kubernetes</li>
+          <li>CI/CD</li>
+          <li>Containers</li>
+        </ul>
+      </section>
+
+      <!-- ===== News / 소식 ===== -->
+      <section id="news">
+        <h2>News <span class="ko-inline">소식</span></h2>
+        <ul class="news">
+          <li>
+            <span class="date">2026.11</span>
+            <div>Launched this personal homepage, deployed as a container image via GitHub Actions.
+              <span class="ko">GitHub Actions로 컨테이너 이미지를 빌드·배포하는 개인 홈페이지를 오픈했습니다.</span></div>
+          </li>
+          <li>
+            <span class="date">2026.MM</span> <!-- TODO -->
+            <div>Add your recent news here (new job, award, talk, release...).
+              <span class="ko">최근 소식을 여기에 적어주세요 (이직, 수상, 발표, 릴리즈 등).</span></div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ===== Projects / 프로젝트 ===== -->
+      <section id="projects">
+        <h2>Projects <span class="ko-inline">프로젝트</span></h2>
+
+        <article class="item">
+          <div class="item-head">
+            <h3><a href="https://github.com/azxcv24/bokwang.dev">bokwang.dev</a></h3>
+            <span class="date">2026</span>
+          </div>
+          <p>Personal homepage served by nginx in a container. Built and pushed to GHCR automatically with GitHub Actions.</p>
+          <p class="ko">nginx 컨테이너로 서비스되는 개인 홈페이지. GitHub Actions로 자동 빌드 후 GHCR에 이미지 배포.</p>
+          <p class="stack">HTML · CSS · Docker · GitHub Actions</p>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Project Name <!-- TODO --></h3>
+            <span class="date">YYYY</span>
+          </div>
+          <p>One or two sentences: what problem it solves and what you did.</p>
+          <p class="ko">한두 문장으로: 어떤 문제를 풀었고 내가 무엇을 했는지.</p>
+          <p class="stack">Tech · Stack · Here</p>
+        </article>
+      </section>
+
+      <!-- ===== Experience / 경력 ===== -->
+      <section id="experience">
+        <h2>Experience <span class="ko-inline">경력</span></h2>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Company Name <!-- TODO --></h3>
+            <span class="date">YYYY.MM – Present</span>
+          </div>
+          <p class="sub">Position / Team</p>
+          <ul>
+            <li>Main responsibility or achievement. <span class="ko">주요 업무 또는 성과.</span></li>
+            <li>Another achievement with numbers if possible. <span class="ko">가능하면 수치로 표현한 성과.</span></li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Previous Company <!-- TODO --></h3>
+            <span class="date">YYYY.MM – YYYY.MM</span>
+          </div>
+          <p class="sub">Position / Team</p>
+          <ul>
+            <li>What you did there. <span class="ko">담당했던 일.</span></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- ===== Education / 학력 ===== -->
+      <section id="education">
+        <h2>Education <span class="ko-inline">학력</span></h2>
+        <article class="item">
+          <div class="item-head">
+            <h3>University Name <!-- TODO --></h3>
+            <span class="date">YYYY – YYYY</span>
+          </div>
+          <p class="sub">B.S. in Computer Science <span class="ko-inline">컴퓨터공학 학사</span></p>
+        </article>
+      </section>
+
+      <!-- ===== Awards & Certificates / 수상 및 자격증 ===== -->
+      <section id="awards">
+        <h2>Awards &amp; Certificates <span class="ko-inline">수상 · 자격증</span></h2>
+        <ul class="plain">
+          <li><span class="date">YYYY</span> Certificate or award name <!-- TODO --> <span class="ko-inline">자격증 / 수상명</span></li>
+        </ul>
+      </section>
+
+      <!-- ===== Contact / 연락처 ===== -->
+      <section id="contact">
+        <h2>Contact <span class="ko-inline">연락처</span></h2>
+        <p>Feel free to reach out for collaboration or questions.
+          <span class="ko">협업이나 문의는 편하게 연락 주세요.</span></p>
+        <ul class="plain">
+          <li>Email: <code>your.email@example.com</code> <!-- TODO --></li>
+          <li>GitHub: <a href="https://github.com/azxcv24">github.com/azxcv24</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="wrap footer">
+    <p>&copy; <span id="year">2026</span> Bokwang · Last updated: Nov 2026</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
