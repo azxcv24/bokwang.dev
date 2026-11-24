@@ -19,4 +19,12 @@
   });
 
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Build email links at runtime so the address is not in the HTML source.
+  // 이메일 주소가 HTML 원본에 노출되지 않도록 브라우저에서 조합.
+  document.querySelectorAll('a.email').forEach(function (a) {
+    var addr = a.dataset.user + '@' + a.dataset.domain;
+    a.textContent = addr;
+    a.href = 'mai' + 'lto:' + addr;
+  });
 })();

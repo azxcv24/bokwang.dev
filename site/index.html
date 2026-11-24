@@ -166,7 +166,12 @@
         <p>Feel free to reach out for collaboration or questions.
           <span class="ko">협업이나 문의는 편하게 연락 주세요.</span></p>
         <ul class="plain">
-          <li>Email: <code>your.email@example.com</code> <!-- TODO --></li>
+          <!--
+            Public repo: do NOT write your email as plain text (spam bots scrape GitHub).
+            Fill data-user / data-domain separately; JS joins them in the browser.
+            퍼블릭 저장소: 이메일을 그대로 쓰지 말 것 (스팸봇 수집). 아이디/도메인을 나눠 적으면 JS가 합쳐서 표시.
+          -->
+          <li>Email: <a class="email" data-user="your.name" data-domain="example.com" href="#contact">[enable JavaScript]</a> <!-- TODO --></li>
           <li>GitHub: <a href="https://github.com/azxcv24">github.com/azxcv24</a></li>
         </ul>
       </section>
