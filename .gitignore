@@ -1,0 +1,21 @@
+# Secrets — never commit (public repo) / 비밀 정보 — 절대 커밋 금지 (퍼블릭 저장소)
+.env
+.env.*
+*.pem
+*.key
+*.p12
+credentials*.json
+secrets/
+
+# Personal drafts that should not be public / 공개하면 안 되는 개인 초안
+private/
+*.private.*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/settings.local.json
